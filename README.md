@@ -12,7 +12,7 @@ Cypher ist ein rein **ethisches, forensisches Analyse- und Testtool**, das aussc
 
 ## 🌐 Funktionen: "Scan the Web"
 
-`scan the Web` ist ein zentraler Bestandteil von Cypher. Es durchsucht in Echtzeit das Internet (Clearnet, Deep Web & Darknet) nach illegalen Inhalten, darunter u.a.:
+`scan the Web` ist ein zentraler Bestandteil von Cypher. Es durchsucht in Echtzeit das Internet (Clearnet, Deep Web & Darknet) nach illegalen Inhalten und reportet diese entsprechend, darunter u.a.:
 
 - Kindesmissbrauch / CSAM (Child Sexual Abuse Material)
 - Scam- und Phishing-Webseiten
