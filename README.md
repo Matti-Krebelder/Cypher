@@ -1,4 +1,4 @@
-# Cypher - Web & Surveillance Intelligence Tool
+# Cypher – Web & Surveillance Intelligence Tool
 
 **Entwickelt von [Fsociety00.com](https://fsociety00.com)  
 Projektleitung: Matti Krebelder**
@@ -6,13 +6,14 @@ Projektleitung: Matti Krebelder**
 ---
 
 ## ⚠️ Hinweis
+
 Cypher ist ein rein **ethisches, forensisches Analyse- und Testtool**, das ausschließlich zu **legalen Zwecken** entwickelt wurde. Jeder Missbrauch zu illegalen oder nicht genehmigten Zwecken ist strengstens untersagt.
 
 ---
 
 ## 🌐 Funktionen: "Scan the Web"
 
-`scan the Web` ist ein zentraler Bestandteil von Cypher. Es durchsucht in Echtzeit das Internet (Clearnet, Deep Web & Darknet) nach illegalen Inhalten und reportet diese entsprechend, darunter u.a.:
+`scan the Web` ist ein zentraler Bestandteil von Cypher. Es durchsucht in Echtzeit das Internet (Clearnet, Deep Web & Darknet) nach illegalen Inhalten und reportet diese automatisiert:
 
 - Kindesmissbrauch / CSAM (Child Sexual Abuse Material)
 - Scam- und Phishing-Webseiten
@@ -26,67 +27,135 @@ Cypher ist ein rein **ethisches, forensisches Analyse- und Testtool**, das aussc
 - Ransomware Distribution Nodes
 - Malware-Distribution (z. B. über Malvertising)
 
-Cypher nutzt fortgeschrittene Mustererkennung, Hashvergleich, OSINT-Techniken und Realtime-Linkgraph-Analysen.
+> Cypher nutzt eine Kombination aus KI-gestützter Mustererkennung, Hash-Vergleich, Realtime-Linkgraphen und OSINT-Techniken.
 
 ---
 
 ## 🛰 Globale Echtzeitüberwachung
 
-Cypher verfügt über Live-Zugriff auf:
+Cypher greift in Echtzeit auf Datenströme aus über 15 Kategorien zu:
 
-- **>8.000 Satelliten-Datenströme** (Wetter, Erdbeobachtung, kommerzielle Feeds)
-- **10.000+ Flugzeuge weltweit** (Live-Tracking, ICAO/ADS-B Daten)
-- **100.000+ Schiffe & Fähren** (AIS-basierte Bewegungsdaten)
-- **Internationale Raumstation (ISS)** (Live-Koordinaten & Stream)
-- **>400.000 öffentlich zugängliche Webcams** (z. B. Verkehr, Wetter, Natur, Städte)
-- **Öffentliche Verkehrsmittel-Daten weltweit** (Zug, Bus, Metro, teilweise in Echtzeit)
+- **>8.000 Satelliten-Feeds** (u.a. Wetter, Umwelt, EO)
+- **10.000+ Flugzeuge weltweit** (ADS-B, ICAO)
+- **100.000+ maritime Objekte** (AIS-Daten)
+- **ISS Live-Tracking** mit Bahnverlauf & Koordinaten
+- **>400.000 Webcams weltweit** (Livecams, Verkehrsfeeds, Städte, Natur)
+- **Öffentliche Verkehrsdaten global** (Zug, Metro, Bus – je nach Region in Echtzeit)
+- **Globale NEWS RSS FEEDS**
 
-Die Informationen werden über öffentlich verfügbare APIs, aggregierte Feeds und spezialisierte OSINT-Datenquellen bezogen.
-
----
-
-## 🧠 Social Engineering AI (Ethical Use Only)
-
-Cypher enthält eine integrierte Social Engineering-KI für autorisierte Tests in geschlossenen Testumgebungen. Diese kann u.a.:
-
-- Gespräche auf WhatsApp / Telegram / Instagram simulieren
-- Verhalten in Social-Media-Profilen analysieren
-- Menschliche Reaktionen in simulierten Phishing-Dialogen erzeugen
-- Test-Szenarien für Awareness-Trainings durchführen
-
-**⚠️ Einsatz ausschließlich in legalen Testumgebungen! Kein Zugriff auf echte Accounts oder personenbezogene Daten ohne Zustimmung.**
+Alle Feeds werden automatisiert aggregiert, verarbeitet und gespeichert.
 
 ---
 
-## 🔍 Visuelle Objekterkennung & Webcam-Suche
+## 🤖 KI, Automatisierung & Anti-Bot-Techniken
 
-Cypher unterstützt intelligente Bild- und Objekterkennung in Kombination mit globalem Webcam-Feed-Zugriff.
+Cypher setzt an mehreren Stellen KI und Automatisierungslogik ein:
 
-### 🔧 Beispielanwendung:
-**Ziel:** Suche nach einem „schwarzen Auto“  
-**Vorgehen:**
+- **Objekterkennung & Bildanalyse** mittels YOLOv8, OpenCV, DETR, Color Match KI
+- **Adaptive Entscheidungslogik** zur Priorisierung von Funden (Relevanz, Risikobewertung)
+- **Cloudflare & Bot-Protection Bypass** Advanced Protection durch Random Proxys / Advanced Cloudflare Bypasses...
+- **Human Behavior Simulation** (Mouse Movement, Delay Injection, Randomized Headers)
+- **Erweiterbares Modul-System**
 
-1. Der Nutzer gibt eine Beschreibung oder ein Bild ein (z. B. „schwarzes Auto“).
-2. Cypher nutzt Deep-Learning-gestützte Objekterkennung (YOLOv8, OpenCV, etc.), um visuelle Merkmale zu identifizieren.
-3. Das System scannt automatisch alle verfügbaren **400.000+ Webcams** weltweit:
-   - Verkehrskameras
-   - Parkplätze
-   - Straßenüberwachung
-   - Flughafenzufahrten
-4. Treffer werden mit Zeitstempel, Ort (Geo-Koordinaten) und Screenshot geloggt.
+Zudem nutzt Cypher ein integriertes Task-Scheduling-System, das alle relevanten Datenquellen automatisch und zyklisch abruft.
 
-### 🧠 Unterstützte visuelle Suchanfragen:
-- Fahrzeuge (Marke, Farbe, Typ)
-- Personen (nur bei autorisierten Tests & Szenarien)
-- Nummernschilder (wenn lesbar & legal zulässig)
-- Kleidung (z. B. „rote Jacke“, „gelber Helm“)
-- Bewegungsmuster (z. B. „rennende Person“, „stehendes Objekt seit 15 Min“)
-- Tiere, Drohnen, bestimmte Gegenstände
+---
 
-> Kombinierbar mit Geofencing, Tageszeitfiltern und Verkehrsmustern.
+## 🔍 Visuelle Erkennung & Webcam-Suche
 
-### ⚠️ Datenschutz-Hinweis:
-Die Objekterkennung wird **ausschließlich auf öffentlich zugänglichen Webcams** durchgeführt. Kein Zugriff auf private CCTV-Feeds oder nicht freigegebene Kameras. Cypher speichert keine personenbezogenen Daten und anonymisiert erkannte Objekte.
+Cypher kombiniert Deep Learning mit globalem Webcam-Zugriff. Beispiel: Ein Nutzer sucht ein „schwarzes Auto“ – das System identifiziert relevante Merkmale im Bild und durchsucht weltweit Live-Webcams:
+
+- Verkehrskameras
+- Parkplätze
+- Straßenzüge
+- Flughafenzufahrten
+
+Treffer werden mit **Screenshot, Koordinaten & Zeitstempel** dokumentiert.
+
+**Unterstützte visuelle Suchanfragen:**
+
+- Fahrzeuge (Typ, Marke, Farbe)
+- Kleidung, Bewegung, Tiere, Drohnen
+- Personen (nur autorisierte Test-Szenarien)
+- Nummernschilder (wenn technisch und rechtlich möglich)
+
+**Datenschutz:** Keine privaten CCTV-Kameras, nur öffentlich zugängliche Quellen. Alle Objekte werden anonymisiert.
+
+---
+
+## 🧠 Social Engineering KI (Ethical Use Only)
+
+Cypher enthält eine experimentelle Social Engineering-KI für **Awareness-Tests** und autorisierte Sicherheitsprüfungen:
+
+- Simulierte Chatdialoge (WhatsApp, Telegram, Instagram)
+- Generierung realistischer menschlicher Antwortmuster
+- Soziale Profilanalyse (öffentlich zugängliche Accounts)
+- Phishing-Szenarien für Schulungszwecke
+
+⚠️ **Keine echte Interaktion mit realen Zielpersonen. Kein Zugriff auf private Accounts oder sensible Daten.**
+
+---
+
+## 🧩 Systemübersicht & Funktionen
+
+Cypher besteht aus modularen Analyse- und Datenerfassungseinheiten:
+
+### 🌍 Standort & Geodaten
+- Konvertiert Adressen in GPS-Koordinaten
+- Liefert genaue Ortsangaben (Reverse Geocoding)
+
+### 🚢 Schiffstracking
+- Verfolgt maritime Bewegungen
+- Suche nach MMSI, Namen oder Position
+
+### ✈️ Flugverfolgung
+- Echtzeitdaten von Verkehrs- & Privatflugzeugen
+- Speicherung von Flugrouten
+
+### 📸 Webcam-Auswertung
+- Extrahiert Livebilder aus Streams
+- Erkennung & Kategorisierung von Inhalten
+
+### 🧠 Bilderkennung & Farbzuordnung
+- Identifiziert Objekte & Farben in Bildern
+- KI-gestützte Analyse (YOLO, DETR)
+- Entfernung redundanter Erkennungen
+
+### 👤 Personenrecherche
+- Sucht nach Personen in Online-Telefonverzeichnissen
+- Liefert Name, Adresse, Telefonnummer (sofern öffentlich)
+
+### 📧 E-Mail-Benachrichtigung
+- HTML-Mails mit strukturierten Berichten via SMTP versenden
+
+### 📰 Nachrichtenanalyse
+- Aggregation aus 10+ RSS-Newsfeeds
+- Filtert tagesaktuelle Artikel
+
+### 🚨 Warnsysteme (NINA)
+- Holt Wetter-, Polizei- & Katastrophenwarnungen (DE)
+- JSON-basierte Speicherung
+
+### ☀️ Wetterdaten
+- Aktuelles Wetter weltweit für beliebige Koordinaten
+- Speicherung in strukturierter Form
+
+### 📹 Webcam-Suche
+- Findet Webcams nach Koordinaten, Radius & Kategorie
+- Gitternetz-Logik zur Vollabdeckung
+
+### 🌐 Websuche & Relevanzfilter
+- Suche über 11 Engines (Google, Bing, DuckDuckGo etc.)
+- Relevanzbewertung, Dublettenerkennung, Stemming-Analyse
+
+---
+
+## 🧠 Systemintegration
+
+- Zentrale Steuerung über `main`
+- Lädt alle Module & API-Schlüssel
+- Führt zyklisch (alle 5 Minuten) Datensammlungen durch
+- Unterstützt einfache Erweiterung per Plug-in
 
 ---
 
@@ -94,16 +163,15 @@ Die Objekterkennung wird **ausschließlich auf öffentlich zugänglichen Webcams
 
 - Projektleitung: **Matti Krebelder**
 - Entwickelt & maintained von **[Fsociety00.com](https://fsociety00.com)**
-- Regelmäßige Updates & Datenbank-Syncs
-- Roadmap & Community-Support über fsociety00.com
+- Community-Integration & Open Source Roadmap in Arbeit
+- Erweiterungen für Darknet-Analyse und Blockchain-Monitoring in Planung
 
 ---
 
 ## 📜 Lizenz & Ethik
 
-Cypher wird ausschließlich zu Forschungs-, Analyse- und Aufklärungszwecken entwickelt. Jeder Missbrauch wird strafrechtlich verfolgt.
-
----
+Cypher dient ausschließlich der Forschung, Aufklärung und Cybersicherheitsanalyse. Jeder Missbrauch führt zu strafrechtlichen Konsequenzen.
 
 > „Observe, don’t exploit. Analyze, don’t attack.“  
 > – Fsociety00 Ethical Guidelines
+
