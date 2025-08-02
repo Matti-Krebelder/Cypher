@@ -122,7 +122,7 @@ Cypher besteht aus modularen Analyse- und Datenerfassungseinheiten:
 - Entfernung redundanter Erkennungen
 
 ### 👤 Personenrecherche
-- Sucht nach Personen in Online-Telefonverzeichnissen
+- Sucht nach Personen in Online-Quellen (Global Scrapper)
 - Liefert Name, Adresse, Telefonnummer (sofern öffentlich)
 
 ### 📧 E-Mail-Benachrichtigung
