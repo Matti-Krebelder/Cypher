@@ -102,6 +102,9 @@ Cypher besteht aus modularen Analyse- und Datenerfassungseinheiten:
 
 ### 🌍 Zugriff auf FBI Datenbank für Gesuchte Personen
 - Beschreibung der Person
+- Zuletzt gesehen
+- Bilder der Person
+- gefahreneinschätzung
 
 
 ### 🌍 Standort & Geodaten
