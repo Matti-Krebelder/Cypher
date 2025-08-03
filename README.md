@@ -100,6 +100,10 @@ Cypher enthält eine experimentelle Social Engineering-KI für **Awareness-Tests
 
 Cypher besteht aus modularen Analyse- und Datenerfassungseinheiten:
 
+### 🌍 Zugriff auf FBI Datenbank für Gesuchte Personen
+- Beschreibung der Person
+
+
 ### 🌍 Standort & Geodaten
 - Konvertiert Adressen in GPS-Koordinaten
 - Liefert genaue Ortsangaben (Reverse Geocoding)
