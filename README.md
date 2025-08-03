@@ -124,6 +124,7 @@ Cypher besteht aus modularen Analyse- und Datenerfassungseinheiten:
 ### 👤 Personenrecherche
 - Sucht nach Personen in Online-Quellen (Global Scrapper)
 - Liefert Name, Adresse, Telefonnummer (sofern öffentlich)
+- Durchschnittliche Personen ergebnisse c.a 5-450 Tausend Entrys!
 
 ### 📧 E-Mail-Benachrichtigung
 - HTML-Mails mit strukturierten Berichten via SMTP versenden
